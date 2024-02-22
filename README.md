@@ -46,7 +46,7 @@ A API Territórios é uma aplicação backend construída com o framework NestJS
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/antonioluciofb/api-territorios.git
+   git clone https://github.com/antonioluciofb/territories-api
    ```
 
 2. Instale as dependências:
