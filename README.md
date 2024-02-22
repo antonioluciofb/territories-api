@@ -14,60 +14,54 @@
 <a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
 <a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
 <a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" />
 
-## Description
+# API Territórios
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Visão Geral
 
-## Installation
+A API Territórios é uma aplicação backend construída com o framework NestJS, projetada para fornecer endpoints de API robustos e escaláveis para gerenciamento de territórios.
 
-```bash
-$ yarn install
-```
+## Recursos
 
-## Running the app
+- **Autenticação**: Utiliza JWT (Tokens JSON Web) para autenticação segura.
+- **Autorização**: Implementa controle de acesso baseado em papéis (RBAC) para gerenciar permissões de usuário.
+- **Integração com MongoDB**: Utiliza o ODM Mongoose para integração sem problemas com bancos de dados MongoDB.
+- **Integração com AWS**: Integrada com SDK AWS para acessar os serviços da AWS.
+- **Validação**: Utiliza class-validator para validação de entrada e class-transformer para transformação de dados.
+- **Tratamento de Erros**: Fornece tratamento de erros centralizado e registro para melhor depuração.
+- **Testes**: Inclui testes unitários abrangentes e testes de ponta a ponta usando Jest e Supertest.
+- **Linting**: Configurada com ESLint para linting de código e formatação.
+- **Configuração de Ambiente**: Usa @nestjs/config para gerenciamento de configuração baseada em ambiente.
+- **Moment Timezone**: Incorpora moment-timezone para manipulação de operações relacionadas ao fuso horário.
 
-```bash
-# development
-$ yarn run start
+## Pré-requisitos
 
-# watch mode
-$ yarn run start:dev
+- Node.js e npm instalados em sua máquina
+- Instância de banco de dados MongoDB
+- Conta da AWS (para integração com a AWS)
 
-# production mode
-$ yarn run start:prod
-```
+## Instalação
 
-## Test
+1. Clone o repositório:
 
-```bash
-# unit tests
-$ yarn run test
+   ```bash
+   git clone https://github.com/antonioluciofb/api-territorios.git
+   ```
 
-# e2e tests
-$ yarn run test:e2e
+2. Instale as dependências:
 
-# test coverage
-$ yarn run test:cov
-```
+   ```bash
+   cd api-territorios
+   npm install
+   ```
 
-## Support
+3. Configure as variáveis de ambiente:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+   - Crie um arquivo `.env` com base em `.env.example`.
+   - Preencha as variáveis de ambiente necessárias.
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
